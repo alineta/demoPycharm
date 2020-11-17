@@ -21,4 +21,4 @@ def lireConstraintes():
 
 
 if __name__ == '__main__':
-    print(lireFichierAir().head())
+    print(lireConstraintes().head())
