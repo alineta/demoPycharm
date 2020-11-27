@@ -123,48 +123,9 @@ app.layout = html.Div([
     dbc.Row([dbc.Col(card_main, width=2),
              dbc.Col(card_question, width=2),
              dbc.Col(card_graph, width=7)], justify="around"),  # justify="start", "center", "end", "between", "around"
-
-    # dbc.CardGroup([card_main, card_question, card_graph])   # attaches cards with equal width and height columns
-    # dbc.CardDeck([card_main, card_question, card_graph])    # same as CardGroup but with gutter in between cards
-
-    # dbc.CardColumns([                        # Cards organised into Masonry-like columns
-    #         card_main,
-    #         card_question,
-    #         card_graph,
-    #         card_question,
-    #         card_question,
-    # ])
-
 ])
 
 
-
-# app.layout =html.Div([
-#         dcc.Dropdown(
-#                 id='dropdown-update-layout',
-#                 value='circle',
-#                 clearable=False,
-#                 options=[
-#                     {'label': name.capitalize(), 'value': name}
-#                     for name in ['grid', 'random', 'circle', 'cose', 'concentric']
-#                 ]
-#             ),
-#         cyto.Cytoscape(
-#                 id='cytoscape-update-layout',
-#                 elements=listeCytoHTML,
-#                 layout={'name': 'circle'},
-#                 style={'width': '100%', 'height': '450px'}
-#             ),
-#
-#         dcc.Dropdown(
-#                 id='ChoixTables',
-#                 options=listeDeroulanteNoeuds,
-#     #            value='NYC',
-#                 placeholder= 'table(s) sélectionnée(s)',
-#                 multi=False
-#         ),
-#         html.Div(id='dd-output-container')
-#     ])
 
 #_____________ Gestion des Output, Input _______
 
@@ -177,17 +138,6 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
         return {'name': nouveauLayout}
     else :
         return ancienLayout
-
-
-# @app.callback( Output(component_id='cytoscape-update-layout',component_property= 'elements'),
-#                Input(component_id='ChoixTables',component_property= 'value'),
-#                State(component_id='cytoscape-update-layout',component_property= 'elements'))
-# def updateDropdownChoixTables(table,elements):
-#     print(table)
-#     if table :
-#         return [initAffichage(dfListeRelation, table)]
-#     # else:
-#     #     return [elements]
 
 @app.callback([#Output(component_id='cytoscape-update-layout',component_property= 'style'),
               Output(component_id='cytoscape-update-layout',component_property= 'elements')],
