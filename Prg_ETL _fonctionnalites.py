@@ -145,9 +145,7 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
                State(component_id='cytoscape-update-layout',component_property= 'elements')
 )
 def update_layout1(table, relations, graph):
-    print(table,relations)
-    print("select count(*) from ", relations[0]['source'], " join ", relations[0]['target'], " on ",
-          relations[0]['relation']['colTableMère'])
+
     if table is None :
         print('aucune sélection',graph)
         return [graph]
