@@ -139,14 +139,13 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
     else :
         return ancienLayout
 
-@app.callback([#Output(component_id='cytoscape-update-layout',component_property= 'style'),
-              Output(component_id='cytoscape-update-layout',component_property= 'elements')],
-              [Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData')],
-               #Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
+@app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
+              [Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData'),
+               Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
                State(component_id='cytoscape-update-layout',component_property= 'elements')
 )
-def update_layout1(table, graph):
-    print(table, graph)
+def update_layout1(table, relations, graph):
+    print(relations)
     if table is None :
         print('aucune sélection',graph)
         return [graph]
