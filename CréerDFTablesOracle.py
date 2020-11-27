@@ -45,7 +45,11 @@ def CytoHTML (DfListe,LNoeudsRelHTML):
     for index, ligne in DfListe.iterrows():
         LNoeudsRelHTML.append(
             {'data': {'source': ligne['NomTableMère'],
-                      'target': ligne['NomTableFille']}})
+                      'target': ligne['NomTableFille'],
+                      'relation': {'colTableMère': ligne["colTableMère"],
+                                   'colTableFille': ligne["colTableFille"]}
+                      },
+             })
     print(LNoeudsRelHTML)
     return (LNoeudsRelHTML)
 
@@ -73,7 +77,11 @@ def initAffichage(DfListe,nomTable):
         DfListeRel.append({'data': {'id': ligne['NomTableFille'],
                                            'label': ligne['NomTableFille']}})
         DfListeRel.append({'data': {'source': ligne['NomTableMère'],
-                                           'target': ligne['NomTableFille']}})
+                                           'target': ligne['NomTableFille'],
+                                    'relation': {'colTableMère': ligne["colTableMère"],
+                                                 'colTableFille': ligne["colTableFille"]}
+                                    },
+                           })
     #print(DfListeRel)
     return DfListeRel
 

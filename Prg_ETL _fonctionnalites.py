@@ -145,17 +145,29 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
                State(component_id='cytoscape-update-layout',component_property= 'elements')
 )
 def update_layout1(table, relations, graph):
-    print(relations)
+    print(table,relations)
+    print("select count(*) from ", relations[0]['source'], " join ", relations[0]['target'], " on ",
+          relations[0]['relation']['colTableMère'])
     if table is None :
         print('aucune sélection',graph)
         return [graph]
     else:
+
         if len(table)>0:
             noeud=table[0]['id']
             print("select count from "+table[0]['id'])
             return [initAffichage(dfListeRelation,noeud)]
         else:
+            if relations:
+                if len(relations) > 0:
+                    print("select count(*) from {0} join {1} on {0}.{2} = {1}.{3} ".format(
+                          relations[0]['source'],relations[0]['target'],
+                          relations[0]['relation']['colTableMère'],
+                          relations[0]['relation']['colTableFille']))
             return [graph]
+
+#with open('infos.txt', mode='a', encoding='utf-8') as mon_fichier :
+#    mon_fichier.write('1. première info\n')
 
 if __name__ == '__main__':
     app.run_server(debug=True)

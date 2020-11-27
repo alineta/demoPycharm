@@ -13,9 +13,9 @@ def BdDlisteRelations():
                 SELECT
     rel_tablemère.constraint_name    "id_TableRelation",           
     rel_tablemère.table_name    "NomTableMère",
-    t_clés_mère.column_name     "idTableMère",
+    t_clés_mère.column_name     "colTableMère",
     rel_tablefille.table_name   "NomTableFille",
-    t_clés_fille.column_name    "idTableFille",
+    t_clés_fille.column_name    "colTableFille",
     Rel_TableMère.constraint_type "TypeRelMère",
     rel_tablefille.constraint_type "RTypeRelFille"
 
