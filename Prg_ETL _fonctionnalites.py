@@ -174,23 +174,75 @@ def update_layout1(table1, table2, relations, graph):
 
     if table2 : table = table2
 
-    if table is None :
-        print('aucune sélection',graph)
+
+    if table is None:
+        print('aucune sélection', graph)
         return [graph]
     else:
 
-        if len(table)>0:
-            noeud=table[0]['id']
-            print("select count from "+table[0]['id'],getAttributTable(noeud).to_dict('records'))
-            return [initAffichage(dfListeRelation,noeud)]
+        if len(table) > 0:
+            noeud = table[0]['id']
+            print(noeud)
+            print("select count from " + table[0]['id'])
+            return [initAffichage(dfListeRelation, noeud)]
         else:
             if relations:
                 if len(relations) > 0:
-                    print("select count(*) from {0} join {1} on {0}.{2} = {1}.{3} ".format(
-                          relations[0]['source'],relations[0]['target'],
-                          relations[0]['relation']['colTableMère'],
-                          relations[0]['relation']['colTableFille']),relations)
+                    valeurtab = []
+                    premiereTable = relations[0]['source']
+                    reqSQL = ' select count(*) \nfrom '+ premiereTable
+
+                    for ligne in relations:
+                        if ligne['source'] not in valeurtab:
+                            print(ligne)
+                            valeurtab.append(ligne['source'])
+                            print(valeurtab)
+                            #                            chaine1 = "JOIN" + ligne['source'] +" ON " + ligne['target']+ "."+ligne['colTableMère'] +
+                            #                            " = " +ligne['target'] +" . "+ ligne['colTableFille']
+                            #                            reqSQL = reqSQL + chaine1
+
+                            if premiereTable == ligne['source']:
+                                table_suivante1,table_suivante2 = ligne['target'],ligne['source']
+
+                            else:
+                                table_suivante1,table_suivante2 = ligne['source'],ligne['target']
+
+                            reqSQL += "\n join {0} on {0}.{2} = {1}.{3} ".format(
+                                table_suivante1,table_suivante2,
+                            ligne['relation']['colTableMère'],
+                                ligne['relation']['colTableFille'])
+                            print(reqSQL)
+                    print(reqSQL)
+
+            #                           ReqSQL= ReqSQL + chaine1
+            #                           print(ReqSQL)
+            # print("select count(*) from {0} join {1} on {0}.{2} = {1}.{3} ".format(
+            # relations[0]['source'],relations[0]['target'],
+            #  relations[0]['relation']['colTableMère'],
+            #  relations[0]['relation']['colTableFille']))
             return [graph]
+
+
+
+
+    #
+    # if table is None :
+    #     print('aucune sélection',graph)
+    #     return [graph]
+    # else:
+    #
+    #     if len(table)>0:
+    #         noeud=table[0]['id']
+    #         print("select count from "+table[0]['id'],getAttributTable(noeud).to_dict('records'))
+    #         return [initAffichage(dfListeRelation,noeud)]
+    #     else:
+    #         if relations:
+    #             if len(relations) > 0:
+    #                 print("select count(*) from {0} join {1} on {0}.{2} = {1}.{3} ".format(
+    #                       relations[0]['source'],relations[0]['target'],
+    #                       relations[0]['relation']['colTableMère'],
+    #                       relations[0]['relation']['colTableFille']),relations)
+    #         return [graph]
 
 # with open('infos.txt', mode='a', encoding='utf-8') as mon_fichier :
 #    mon_fichier.write('1. première info\n')
