@@ -63,11 +63,11 @@ card_main = dbc.Card(
                 html.P("Choix des dispositions", style={'text-align': 'center'}, className="card-title"),
                 dcc.Dropdown(
                     id='dropdown-update-layout',
-                    value='circle',
+                    value='breadthfirst',
                     clearable=False,
                     options=[
                         {'label': name.capitalize(), 'value': name}
-                        for name in ['grid', 'random', 'circle', 'cose', 'concentric']
+                        for name in ['grid', 'breadthfirst', 'circle', 'cose', 'concentric','random']
                     ]
                 ),
                 # html.P(''),
@@ -111,10 +111,16 @@ card_graph = dbc.Card(
                 style={'text-align': 'center'}, className="card-text"),
         cyto.Cytoscape(
             id='cytoscape-update-layout',
-            elements=listeCytoHTML,
-            layout={'name': 'circle'},
+            elements=[],
+            layout={'name': 'breadthfirst'},
             style={'width': '100%', 'height': '400px'}
-            )
+            ),
+        cyto.Cytoscape(
+            id='cytoscape-global',
+            elements=listeCytoHTML,
+            layout={'name': 'breadthfirst'},
+            style={'width': '100%', 'height': '400px'}
+        )
     ]
 )
 
@@ -129,22 +135,32 @@ app.layout = html.Div([
 
 #_____________ Gestion des Output, Input _______
 
-@app.callback(Output(component_id='cytoscape-update-layout',component_property= 'layout'),
+@app.callback([Output(component_id='cytoscape-update-layout',component_property= 'layout'),
+               Output(component_id='cytoscape-global',component_property= 'layout'),],
                Input(component_id='dropdown-update-layout',component_property= 'value'),
               State(component_id='cytoscape-update-layout', component_property='layout')
               )
 def updateDropdownLayout(nouveauLayout,ancienLayout):
+    print(nouveauLayout,ancienLayout)
     if nouveauLayout :
-        return {'name': nouveauLayout}
+        return {'name': nouveauLayout},{'name': nouveauLayout}
     else :
-        return ancienLayout
+        return ancienLayout,ancienLayout
 
 @app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
-              [Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData'),
+              [Input(component_id="cytoscape-global",component_property= 'selectedNodeData'),
+               Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
                State(component_id='cytoscape-update-layout',component_property= 'elements')
 )
-def update_layout1(table, relations, graph):
+def update_layout1(table1, table2, relations, graph):
+
+    if table1 :
+        table = table1
+    else:
+        table = table2
+
+    if table2 : table = table2
 
     if table is None :
         print('aucune sélection',graph)
@@ -161,10 +177,10 @@ def update_layout1(table, relations, graph):
                     print("select count(*) from {0} join {1} on {0}.{2} = {1}.{3} ".format(
                           relations[0]['source'],relations[0]['target'],
                           relations[0]['relation']['colTableMère'],
-                          relations[0]['relation']['colTableFille']))
+                          relations[0]['relation']['colTableFille']),relations)
             return [graph]
 
-#with open('infos.txt', mode='a', encoding='utf-8') as mon_fichier :
+# with open('infos.txt', mode='a', encoding='utf-8') as mon_fichier :
 #    mon_fichier.write('1. première info\n')
 
 if __name__ == '__main__':
