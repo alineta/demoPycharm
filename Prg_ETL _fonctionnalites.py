@@ -106,11 +106,7 @@ card_question = dbc.Card(
                 value='',
                 style={'width': '100%', 'height': 300},
             ),
-        dash_table.DataTable(
-            id='affiche-colonnes-table',
-            columns=[{"name": i, "id": i} for i in df.columns],
-            data=df.to_dict('records'),
-        ),
+        html.Div(id='affiche-colonnes-table')
     ],
     color="warning",
     inverse=False,
@@ -151,7 +147,8 @@ app.layout = html.Div([
 @app.callback([Output(component_id='cytoscape-update-layout',component_property= 'layout'),
                Output(component_id='cytoscape-global',component_property= 'layout'),],
                Input(component_id='dropdown-update-layout',component_property= 'value'),
-              State(component_id='cytoscape-update-layout', component_property='layout')
+              State(component_id='cytoscape-update-layout', component_property='layout'),
+              prevent_initial_call=True
               )
 def updateDropdownLayout(nouveauLayout,ancienLayout):
     if nouveauLayout :
@@ -159,11 +156,35 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
     else :
         return ancienLayout,ancienLayout
 
+
+
+@app.callback(Output('affiche-colonnes-table', 'children'),
+              [Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData')],
+              prevent_initial_call=True
+              )
+def updateTable(table):
+    if table :
+        df = getAttributTable(table[0]['id'])
+        table = html.Div([
+            html.H5(table[0]['id']),
+            dash_table.DataTable(
+                data=df.to_dict('rows'),
+                columns=[{'name': i, 'id': i} for i in df.columns]
+            )
+        ])
+
+        return  table
+    else :
+        return  html.Div([html.H5("")])
+
+
+
 @app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
               [Input(component_id="cytoscape-global",component_property= 'selectedNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
-               [State(component_id='cytoscape-update-layout',component_property= 'elements'),]
+               [State(component_id='cytoscape-update-layout',component_property= 'elements'),],
+              prevent_initial_call=True
 )
 def update_layout1(table1, table2, relations, graph):
 
@@ -176,14 +197,13 @@ def update_layout1(table1, table2, relations, graph):
 
 
     if table is None:
-        print('aucune sélection', graph)
+        #print('aucune sélection', graph)
         return [graph]
     else:
 
         if len(table) > 0:
             noeud = table[0]['id']
-            print(noeud)
-            print("select count from " + table[0]['id'])
+            #print("select count from " + table[0]['id'])
             return [initAffichage(dfListeRelation, noeud)]
         else:
             if relations:
@@ -191,12 +211,11 @@ def update_layout1(table1, table2, relations, graph):
                     valeurtab = []
                     premiereTable = relations[0]['source']
                     reqSQL = ' select count(*) \nfrom '+ premiereTable
-
+                    print(graph)
                     for ligne in relations:
                         if ligne['source'] not in valeurtab:
                             print(ligne)
                             valeurtab.append(ligne['source'])
-                            print(valeurtab)
                             #                            chaine1 = "JOIN" + ligne['source'] +" ON " + ligne['target']+ "."+ligne['colTableMère'] +
                             #                            " = " +ligne['target'] +" . "+ ligne['colTableFille']
                             #                            reqSQL = reqSQL + chaine1
@@ -211,7 +230,7 @@ def update_layout1(table1, table2, relations, graph):
                                 table_suivante1,table_suivante2,
                             ligne['relation']['colTableMère'],
                                 ligne['relation']['colTableFille'])
-                            print(reqSQL)
+#                            print(reqSQL)
                     print(reqSQL)
 
             #                           ReqSQL= ReqSQL + chaine1
