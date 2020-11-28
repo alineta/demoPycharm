@@ -1,4 +1,5 @@
 import pandas as pd
+import networkx as nx
 import dash
 import dash_table
 import dash_cytoscape as cyto
@@ -106,7 +107,8 @@ card_question = dbc.Card(
                 value='',
                 style={'width': '100%', 'height': 300},
             ),
-        html.Div(id='affiche-colonnes-table')
+        html.Div(id='affiche-colonnes-table'),
+        html.Div(id='textarea-root', style={'whiteSpace': 'pre-line'}),
     ],
     color="warning",
     inverse=False,
@@ -178,16 +180,39 @@ def updateTable(table):
         return  html.Div([html.H5("")])
 
 
+def getRoot(elements):
+    graph = nx.DiGraph()
+    r = []
+    for i in elements :
+        d = i['data']
+        if d.get('label',0) == 0 :
+            r.append((d['source'],d['target']))
+
+    graph.add_edges_from(r)
+    return list(nx.dfs_tree(graph).edges())[0][0]
+
+
+
+@app.callback(
+    Output('textarea-root', 'children'),
+    Input(component_id="cytoscape-update-layout", component_property='selectedEdgeData'),
+    State(component_id='cytoscape-update-layout', component_property='elements')
+)
+def update_output(relation,graph):
+    if relation :
+        return getRoot(graph)
+    else:
+        return ''
+
 
 @app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
               [Input(component_id="cytoscape-global",component_property= 'selectedNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
-               [State(component_id='cytoscape-update-layout',component_property= 'elements'),],
-              prevent_initial_call=True
+               [State(component_id='cytoscape-update-layout',component_property= 'elements')],
+               prevent_initial_call=True
 )
 def update_layout1(table1, table2, relations, graph):
-
     if table1 :
         table = table1
     else:
@@ -209,7 +234,7 @@ def update_layout1(table1, table2, relations, graph):
             if relations:
                 if len(relations) > 0:
                     valeurtab = []
-                    premiereTable = relations[0]['source']
+                    premiereTable = getRoot(graph)#relations[0]['source']
                     reqSQL = ' select count(*) \nfrom '+ premiereTable
                     print(graph)
                     for ligne in relations:
