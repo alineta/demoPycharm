@@ -47,12 +47,29 @@ ORDER BY table_name
 
 def BdDlisteColonnesTables():
     queryListeColTables = """
-    select
-    table_name    "NomTable",
-    column_name   "AttributTable",
-    data_type     "TypeAttribut",
-    char_length   "TailleAttribut"
-FROM
-    user_tab_columns
+                    select  
+                           tc.TABLE_NAME                                                 as "nom_table",
+                           tc.COLUMN_ID                                                  as "id_colonne",
+                           tc.COLUMN_NAME                                                as "nom_colonne",
+                           lower(tc.DATA_TYPE)                                           as "type_colonne",
+                           nvl(to_char(coalesce(tc.DATA_PRECISION, tc.DATA_LENGTH)),' ') as "taille_colonne",
+                           nvl(to_char(tc.DATA_SCALE),' ')                               as "precision_colonne",
+                           decode(tc.NULLABLE,'Y','null','N','not null')                 as "is_nullable",
+                           nvl(ky.CONSTRAINT_TYPE,' ')                                   as "type_contrainte", 
+                           nvl(ky.CONSTRAINT_NAME,' ')                                   as "nom_contrainte"
+                    from user_tab_columns tc
+                         left join (select                             
+                                       co.OWNER                   ,
+                                       co.TABLE_NAME              ,
+                                       cc.COLUMN_NAME             ,
+                                       co.CONSTRAINT_TYPE||'K'  as CONSTRAINT_TYPE,
+                                       co.CONSTRAINT_NAME         
+                                from user_constraints co 
+                                     join user_cons_columns cc
+                                       on  co.TABLE_NAME      = cc.TABLE_NAME
+                                       and co.CONSTRAINT_NAME = cc.CONSTRAINT_NAME 
+                                where co.CONSTRAINT_TYPE in ('P','U')) ky
+                          on (     tc.TABLE_NAME     = ky.TABLE_NAME  
+                               and tc.COLUMN_NAME    = ky.COLUMN_NAME  )
 """
     return pd.read_sql_query(queryListeColTables, connection)

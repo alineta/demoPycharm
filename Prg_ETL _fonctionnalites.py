@@ -1,5 +1,6 @@
 import pandas as pd
 import dash
+import dash_table
 import dash_cytoscape as cyto
 import dash_html_components as html
 import dash_core_components as dcc
@@ -11,7 +12,7 @@ from CréerDFTablesOracle import CytoHTML
 from CréerDFTablesOracle import CytoNoeudHTML
 from CréerDFTablesOracle import ListeDeroulanteTables
 from CréerDFTablesOracle import ListeTables
-from CréerDFTablesOracle import DfListeAttributTable
+from CréerDFTablesOracle import getAttributTable
 from CréerDFTablesOracle import initAffichage
 
 #___ Récupération des DF des queries SQL
@@ -88,6 +89,7 @@ card_main = dbc.Card(
     outline=True,  # True = remove the block colors from the background and header
 )
 
+df = getAttributTable('COMMANDES')
 
 card_question = dbc.Card(
     [
@@ -98,6 +100,17 @@ card_question = dbc.Card(
             html.P("Générer la reqête", style={'text-align': 'center'}, className="card-title"),
             dbc.Button("Génération", color="primary", style={'button-align': 'center'})
         ]),
+        html.Div(id='textarea-nom-table', style={'whiteSpace': 'pre-line'}),
+        dcc.Textarea(
+                id='textarea-example',
+                value='',
+                style={'width': '100%', 'height': 300},
+            ),
+        dash_table.DataTable(
+            id='affiche-colonnes-table',
+            columns=[{"name": i, "id": i} for i in df.columns]
+            #data=df.to_dict('records'),
+        ),
     ],
     color="warning",
     inverse=False,
@@ -141,7 +154,6 @@ app.layout = html.Div([
               State(component_id='cytoscape-update-layout', component_property='layout')
               )
 def updateDropdownLayout(nouveauLayout,ancienLayout):
-    print(nouveauLayout,ancienLayout)
     if nouveauLayout :
         return {'name': nouveauLayout},{'name': nouveauLayout}
     else :
@@ -151,7 +163,7 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
               [Input(component_id="cytoscape-global",component_property= 'selectedNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
-               State(component_id='cytoscape-update-layout',component_property= 'elements')
+               [State(component_id='cytoscape-update-layout',component_property= 'elements'),]
 )
 def update_layout1(table1, table2, relations, graph):
 
@@ -169,7 +181,7 @@ def update_layout1(table1, table2, relations, graph):
 
         if len(table)>0:
             noeud=table[0]['id']
-            print("select count from "+table[0]['id'])
+            print("select count from "+table[0]['id'],getAttributTable(noeud).to_dict('records'))
             return [initAffichage(dfListeRelation,noeud)]
         else:
             if relations:

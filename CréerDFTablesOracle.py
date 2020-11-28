@@ -24,10 +24,11 @@ def DfListeTables():
 #liTab=DfListeTables()
 #print(type (liTab))
 
+attributTables = BdDlisteColonnesTables()
+
 #________________aide Cyto
-def DfListeAttributTable():
-    LiAttributTable = (BdDlisteColonnesTables())
-    return (LiAttributTable)
+def getAttributTable(table):
+    return attributTables[attributTables.nom_table == table].drop(columns='nom_table')
 
 #LiColTables = (BdDlisteColonnesTables())
 #print(LiColTables)
