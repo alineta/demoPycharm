@@ -15,7 +15,7 @@ from CréerDFTablesOracle import ListeDeroulanteTables
 from CréerDFTablesOracle import ListeTables
 from CréerDFTablesOracle import getAttributTable
 from CréerDFTablesOracle import initAffichage
-
+from utilitaires import getRoot
 #___ Récupération des DF des queries SQL
 
 dfListeRelation = DfRelationsTables()
@@ -41,7 +41,7 @@ Dfliste =[]
 #_______ Param Affichage HTML Cytoscape et Dropdown
 CytoNoeudHTML(dfListeTables,listeNoeudsRelHTML)
 listeCytoHTML=CytoHTML(dfListeRelation,listeNoeudsRelHTML)
-print(listeCytoHTML)
+#print(listeCytoHTML)
 
 
 
@@ -135,14 +135,11 @@ card_graph = dbc.Card(
     ]
 )
 
-
 app.layout = html.Div([
     dbc.Row([dbc.Col(card_main, width=2),
              dbc.Col(card_question, width=2),
              dbc.Col(card_graph, width=7)], justify="around"),  # justify="start", "center", "end", "between", "around"
 ])
-
-
 
 #_____________ Gestion des Output, Input _______
 
@@ -157,8 +154,6 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
         return {'name': nouveauLayout},{'name': nouveauLayout}
     else :
         return ancienLayout,ancienLayout
-
-
 
 @app.callback(Output('affiche-colonnes-table', 'children'),
               [Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData')],
@@ -179,20 +174,6 @@ def updateTable(table):
     else :
         return  html.Div([html.H5("")])
 
-
-def getRoot(elements):
-    graph = nx.DiGraph()
-    r = []
-    for i in elements :
-        d = i['data']
-        if d.get('label',0) == 0 :
-            r.append((d['source'],d['target']))
-
-    graph.add_edges_from(r)
-    return list(nx.dfs_tree(graph).edges())[0][0]
-
-
-
 @app.callback(
     Output('textarea-root', 'children'),
     Input(component_id="cytoscape-update-layout", component_property='selectedEdgeData'),
@@ -203,7 +184,6 @@ def update_output(relation,graph):
         return getRoot(graph)
     else:
         return ''
-
 
 @app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
               [Input(component_id="cytoscape-global",component_property= 'selectedNodeData'),
@@ -220,30 +200,22 @@ def update_layout1(table1, table2, relations, graph):
 
     if table2 : table = table2
 
-
     if table is None:
-        #print('aucune sélection', graph)
         return [graph]
     else:
 
         if len(table) > 0:
             noeud = table[0]['id']
-            #print("select count from " + table[0]['id'])
             return [initAffichage(dfListeRelation, noeud)]
         else:
             if relations:
                 if len(relations) > 0:
                     valeurtab = []
                     premiereTable = getRoot(graph)#relations[0]['source']
-                    reqSQL = ' select count(*) \nfrom '+ premiereTable
-                    print(graph)
+                    reqSQL = '-'*150+'\nselect count(*) \nfrom '+ premiereTable
                     for ligne in relations:
                         if ligne['source'] not in valeurtab:
-                            print(ligne)
                             valeurtab.append(ligne['source'])
-                            #                            chaine1 = "JOIN" + ligne['source'] +" ON " + ligne['target']+ "."+ligne['colTableMère'] +
-                            #                            " = " +ligne['target'] +" . "+ ligne['colTableFille']
-                            #                            reqSQL = reqSQL + chaine1
 
                             if premiereTable == ligne['source']:
                                 table_suivante1,table_suivante2 = ligne['target'],ligne['source']
@@ -251,45 +223,19 @@ def update_layout1(table1, table2, relations, graph):
                             else:
                                 table_suivante1,table_suivante2 = ligne['source'],ligne['target']
 
-                            reqSQL += "\n join {0} on {0}.{2} = {1}.{3} ".format(
+                            reqSQL += "\n     join {0} \n       on {0}.{2} = {1}.{3} ".format(
                                 table_suivante1,table_suivante2,
                             ligne['relation']['colTableMère'],
                                 ligne['relation']['colTableFille'])
-#                            print(reqSQL)
+                    reqSQL += '\n'
+                    with open('infos.txt', mode='a', encoding='utf-8') as mon_fichier :
+                        mon_fichier.write(reqSQL)
                     print(reqSQL)
 
-            #                           ReqSQL= ReqSQL + chaine1
-            #                           print(ReqSQL)
-            # print("select count(*) from {0} join {1} on {0}.{2} = {1}.{3} ".format(
-            # relations[0]['source'],relations[0]['target'],
-            #  relations[0]['relation']['colTableMère'],
-            #  relations[0]['relation']['colTableFille']))
             return [graph]
 
 
 
-
-    #
-    # if table is None :
-    #     print('aucune sélection',graph)
-    #     return [graph]
-    # else:
-    #
-    #     if len(table)>0:
-    #         noeud=table[0]['id']
-    #         print("select count from "+table[0]['id'],getAttributTable(noeud).to_dict('records'))
-    #         return [initAffichage(dfListeRelation,noeud)]
-    #     else:
-    #         if relations:
-    #             if len(relations) > 0:
-    #                 print("select count(*) from {0} join {1} on {0}.{2} = {1}.{3} ".format(
-    #                       relations[0]['source'],relations[0]['target'],
-    #                       relations[0]['relation']['colTableMère'],
-    #                       relations[0]['relation']['colTableFille']),relations)
-    #         return [graph]
-
-# with open('infos.txt', mode='a', encoding='utf-8') as mon_fichier :
-#    mon_fichier.write('1. première info\n')
 
 if __name__ == '__main__':
     app.run_server(debug=True)
