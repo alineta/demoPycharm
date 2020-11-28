@@ -108,8 +108,8 @@ card_question = dbc.Card(
             ),
         dash_table.DataTable(
             id='affiche-colonnes-table',
-            columns=[{"name": i, "id": i} for i in df.columns]
-            #data=df.to_dict('records'),
+            columns=[{"name": i, "id": i} for i in df.columns],
+            data=df.to_dict('records'),
         ),
     ],
     color="warning",
