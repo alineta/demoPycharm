@@ -69,13 +69,13 @@ card_main = dbc.Card(
                 ),
             ]
         ),
-        dbc.CardBody([
-            html.P("Créer la reqête", style={'text-align': 'center'}, className="card-title"),
-            dbc.Button("Création", color="primary", style={'button-align': 'center'}),
-            html.P(''),
-            html.P("Générer la reqête", style={'text-align': 'center'}, className="card-title"),
-            dbc.Button("Génération", color="primary", style={'button-align': 'center'})
-        ])
+        # dbc.CardBody([
+        #     html.P("Créer la reqête", style={'text-align': 'center'}, className="card-title"),
+        #     dbc.Button("Création", color="primary", style={'button-align': 'center'}),
+        #     html.P(''),
+        #     html.P("Générer la reqête", style={'text-align': 'center'}, className="card-title"),
+        #     dbc.Button("Génération", color="primary", style={'button-align': 'center'})
+        # ])
     ],
     color="primary",   # https://bootswatch.com/default/ for more card colors
     inverse=False,   # change color of text (black or white)
@@ -156,44 +156,21 @@ def updateTable(table):
 
     return  tableAffichage
 
-reqSQL = ''
+
 @app.callback(Output('textarea-requete', 'children'),
-              [Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
+              Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData'),
+              State(component_id="cytoscape-update-layout",component_property= 'elements'),
               prevent_initial_call=True
               )
-def update_requette(relation):
-    return reqSQL
-
-
-@app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
-              [Input(component_id="cytoscape-global",component_property= 'tapNodeData'),
-               Input(component_id="cytoscape-update-layout",component_property= 'tapNodeData'),
-               Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
-               [State(component_id='cytoscape-update-layout',component_property= 'elements')],
-               prevent_initial_call=True
-)
-def update_layout1(table1, table2, relations, graph):
-    global reqSQL
-    reqSQL = ''
-
-    if table2 is None:
-        table = table1
-        if table:
-            if (len(table) > 0) & (len(graph) == 0):
-                noeud = table['id']
-                print(len(table), len(graph),noeud)
-                return [initAffichage(dfListeRelation, noeud)]
-    else :
-        table = table2
-        noeud = table['id']
-        return [initAffichage(dfListeRelation, noeud)]
+def update_requette(relations,graph):
 
     if relations is None:
-        return [graph]
+        return ''
     else:
+        print(relations)
         if len(relations) > 0:
             valeurtab = []
-            premiereTable = getRoot(graph)#relations[0]['source']
+            premiereTable = getRoot(graph)
             reqSQL = '-'*70+'\nselect count(*) \nfrom '+ premiereTable
             for ligne in relations:
                 if ligne['source'] not in valeurtab:
@@ -213,39 +190,35 @@ def update_layout1(table1, table2, relations, graph):
             with open('liste_requetes.txt', mode='a', encoding='utf-8') as mon_fichier :
                 mon_fichier.write(reqSQL)
 
-    return [graph]
+            return reqSQL
 
-    # if table is None:
-    #     return [graph]
-    # else:
-    #     if len(table) > 0:
-    #         noeud = table['id']
-    #         return [initAffichage(dfListeRelation, noeud)]
-    #     else:
-    #         if relations:
-    #             if len(relations) > 0:
-    #                 valeurtab = []
-    #                 premiereTable = getRoot(graph)#relations[0]['source']
-    #                 reqSQL = '-'*70+'\nselect count(*) \nfrom '+ premiereTable
-    #                 for ligne in relations:
-    #                     if ligne['source'] not in valeurtab:
-    #                         valeurtab.append(ligne['source'])
-    #
-    #                         if premiereTable == ligne['source']:
-    #                             table_suivante1,table_suivante2 = ligne['target'],ligne['source']
-    #
-    #                         else:
-    #                             table_suivante1,table_suivante2 = ligne['source'],ligne['target']
-    #
-    #                         reqSQL += "\n     join {0} \n       on {0}.{2} = {1}.{3} ".format(
-    #                             table_suivante1,table_suivante2,
-    #                         ligne['relation']['colTableMère'],
-    #                             ligne['relation']['colTableFille'])
-    #                 reqSQL += '\n'
-    #                 with open('liste_requetes.txt', mode='a', encoding='utf-8') as mon_fichier :
-    #                     mon_fichier.write(reqSQL)
-    #
-    #         return [graph]
+
+
+@app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
+              [Input(component_id="cytoscape-global",component_property= 'tapNodeData'),
+               Input(component_id="cytoscape-update-layout",component_property= 'tapNodeData')],
+               [State(component_id='cytoscape-update-layout',component_property= 'elements')],
+               prevent_initial_call=True
+)
+def update_layout1(table1, table2, graph):
+    print(table1, table2, graph)
+    if table2 is None:
+        if table1 is None :
+            return [graph]
+        else :
+            if len(graph) == 0:
+                table = table1
+            else :
+                table = table2
+    else :
+        table = table2
+
+    print(table, table1, table2, graph)
+    if table :
+        if (len(table) > 0) :
+            noeud = table['id']
+            return [initAffichage(dfListeRelation, noeud)]
+    return [graph]
 
 if __name__ == '__main__':
     app.run_server(debug=True)
