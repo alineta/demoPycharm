@@ -1,0 +1,2990 @@
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from GESTIONS_STOCKS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = GESTIONS_STOCKS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from GESTIONS_STOCKS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = GESTIONS_STOCKS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from STOCKS_ENTREPOTS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = STOCKS_ENTREPOTS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from STOCKS_ENTREPOTS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = STOCKS_ENTREPOTS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join VENDEURS 
+       on VENDEURS.NO_AGENCE = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from ACHETEURS
+     join MAGASINS 
+       on MAGASINS.NO_MAGASIN = ACHETEURS.NO_MAGASIN 
+----------------------------------------------------------------------
+select count(*) 
+from ACHETEURS
+     join MAGASINS 
+       on MAGASINS.NO_MAGASIN = ACHETEURS.NO_MAGASIN 
+     join MAGASINS 
+       on MAGASINS.NO_ADRESSE = ADRESSES.NO_ADRESSE 
+----------------------------------------------------------------------
+select count(*) 
+from ACHETEURS
+     join MAGASINS 
+       on MAGASINS.NO_MAGASIN = ACHETEURS.NO_MAGASIN 
+     join MAGASINS 
+       on MAGASINS.NO_ADRESSE = ADRESSES.NO_ADRESSE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from AGENCES
+     join ADRESSES 
+       on ADRESSES.NO_ADRESSE = AGENCES.NO_ADRESSE 
+     join COMMISSIONNEMENTS_AGENCES 
+       on COMMISSIONNEMENTS_AGENCES.NO_AGENCE = AGENCES.NO_AGENCE 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.NO_ENTREPOT = AGENCES.NO_AGENCE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from DETAILS_COMMANDES
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = DETAILS_COMMANDES.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from DETAILS_COMMANDES
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = DETAILS_COMMANDES.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from GESTIONS_STOCKS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = GESTIONS_STOCKS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from GESTIONS_STOCKS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = GESTIONS_STOCKS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from GESTIONS_STOCKS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = GESTIONS_STOCKS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from GESTIONS_STOCKS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = GESTIONS_STOCKS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from DETAILS_COMMANDES
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = DETAILS_COMMANDES.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from DETAILS_COMMANDES
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = DETAILS_COMMANDES.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from DETAILS_COMMANDES
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = DETAILS_COMMANDES.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from DETAILS_COMMANDES
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = DETAILS_COMMANDES.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from STOCKS_ENTREPOTS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = STOCKS_ENTREPOTS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from STOCKS_ENTREPOTS
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = STOCKS_ENTREPOTS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join CATEGORIES 
+       on CATEGORIES.CODE_CATEGORIE = PRODUITS.CODE_CATEGORIE 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from PRODUITS
+     join FOURNISSEURS 
+       on FOURNISSEURS.NO_FOURNISSEUR = PRODUITS.NO_FOURNISSEUR 
+     join DETAILS_COMMANDES 
+       on DETAILS_COMMANDES.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join STOCKS_ENTREPOTS 
+       on STOCKS_ENTREPOTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join GESTIONS_STOCKS 
+       on GESTIONS_STOCKS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join MOUVEMENTS 
+       on MOUVEMENTS.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+     join TVA_PRODUIT 
+       on TVA_PRODUIT.REF_PRODUIT = PRODUITS.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from DETAILS_COMMANDES
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = DETAILS_COMMANDES.REF_PRODUIT 
+----------------------------------------------------------------------
+select count(*) 
+from DETAILS_COMMANDES
+     join PRODUITS 
+       on PRODUITS.REF_PRODUIT = DETAILS_COMMANDES.REF_PRODUIT 
