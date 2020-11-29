@@ -135,24 +135,27 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
     else :
         return ancienLayout,ancienLayout
 
-table_selectionnee = ''
+
 @app.callback(Output('affiche-colonnes-table', 'children'),
               [Input(component_id="cytoscape-update-layout",component_property= 'tapNodeData')],
               prevent_initial_call=True
               )
 def updateTable(table):
-    global table_selectionnee
+    table_selectionnee = ''
     if table :
         table_selectionnee = table['id']
 
-    df = getAttributTable(table_selectionnee)
-    tableAffichage = html.Div([
-        html.H5(table_selectionnee),
-        dash_table.DataTable(
-            data=df.to_dict('rows'),
-            columns=[{'name': i, 'id': i} for i in df.columns]
-        )
-    ])
+    if len(table_selectionnee) > 0 :
+        df = getAttributTable(table_selectionnee)
+        tableAffichage = html.Div([
+            html.H5(table_selectionnee),
+            dash_table.DataTable(
+                data=df.to_dict('rows'),
+                columns=[{'name': i, 'id': i} for i in df.columns]
+            )
+        ])
+    else :
+        tableAffichage = html.Div([])
 
     return  tableAffichage
 
@@ -167,7 +170,6 @@ def update_requette(relations,graph):
     if relations is None:
         return ''
     else:
-        print(relations)
         if len(relations) > 0:
             valeurtab = []
             premiereTable = getRoot(graph)
@@ -192,8 +194,6 @@ def update_requette(relations,graph):
 
             return reqSQL
 
-
-
 @app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
               [Input(component_id="cytoscape-global",component_property= 'tapNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'tapNodeData')],
@@ -201,7 +201,6 @@ def update_requette(relations,graph):
                prevent_initial_call=True
 )
 def update_layout1(table1, table2, graph):
-    print(table1, table2, graph)
     if table2 is None:
         if table1 is None :
             return [graph]
@@ -213,7 +212,6 @@ def update_layout1(table1, table2, graph):
     else :
         table = table2
 
-    print(table, table1, table2, graph)
     if table :
         if (len(table) > 0) :
             noeud = table['id']
