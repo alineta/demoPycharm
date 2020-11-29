@@ -51,7 +51,7 @@ def CytoHTML (DfListe,LNoeudsRelHTML):
                                    'colTableFille': ligne["colTableFille"]}
                       },
              })
-    print(LNoeudsRelHTML)
+    #print(LNoeudsRelHTML)
     return (LNoeudsRelHTML)
 
 def ListeDeroulanteTables (DfListe):

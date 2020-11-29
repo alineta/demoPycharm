@@ -19,9 +19,7 @@ from utilitaires import getRoot
 #___ Récupération des DF des queries SQL
 
 dfListeRelation = DfRelationsTables()
-#print(type(DfListeRel))
 dfListeTables = DfListeTables()
-#print(type(DfListeTables))
 
 #_******__Codage pour les noeuds et les relations
 #___ ________Préparation des listes pour les noeuds
@@ -41,15 +39,12 @@ Dfliste =[]
 #_______ Param Affichage HTML Cytoscape et Dropdown
 CytoNoeudHTML(dfListeTables,listeNoeudsRelHTML)
 listeCytoHTML=CytoHTML(dfListeRelation,listeNoeudsRelHTML)
-#print(listeCytoHTML)
-
 
 
 #_______ Param Affichage Liste déroulante pour la sélection
 #           des tables par l'utilisateur
 
 listeDeroulanteNoeuds=ListeDeroulanteTables(dfListeTables)
-#print (listeDeroulanteNoeuds)
 
 #_______
 
@@ -72,18 +67,15 @@ card_main = dbc.Card(
                         for name in ['grid', 'breadthfirst', 'circle', 'cose', 'concentric','random']
                     ]
                 ),
-                # html.P(''),
-                # html.P("Choix des tables", style={'text-align': 'center'}, className="card-title"),
-                # dcc.Dropdown(
-                #     id='ChoixTables',
-                #     options=listeDeroulanteNoeuds,
-                #     multi=False
-                # )
-
-                # dbc.Button("Press me", color="primary"),
-                # dbc.CardLink("GirlsWhoCode", href="https://girlswhocode.com/", target="_blank"),
             ]
         ),
+        dbc.CardBody([
+            html.P("Créer la reqête", style={'text-align': 'center'}, className="card-title"),
+            dbc.Button("Création", color="primary", style={'button-align': 'center'}),
+            html.P(''),
+            html.P("Générer la reqête", style={'text-align': 'center'}, className="card-title"),
+            dbc.Button("Génération", color="primary", style={'button-align': 'center'})
+        ])
     ],
     color="primary",   # https://bootswatch.com/default/ for more card colors
     inverse=False,   # change color of text (black or white)
@@ -94,23 +86,10 @@ df = getAttributTable('COMMANDES')
 
 card_question = dbc.Card(
     [
-        dbc.CardBody([
-            html.P("Créer la reqête", style={'text-align': 'center'}, className="card-title"),
-            dbc.Button("Création", color="primary", style={'button-align': 'center'}),
-            html.P(''),
-            html.P("Générer la reqête", style={'text-align': 'center'}, className="card-title"),
-            dbc.Button("Génération", color="primary", style={'button-align': 'center'})
-        ]),
-        html.Div(id='textarea-nom-table', style={'whiteSpace': 'pre-line'}),
-        dcc.Textarea(
-                id='textarea-example',
-                value='',
-                style={'width': '100%', 'height': 300},
-            ),
-        html.Div(id='affiche-colonnes-table'),
-        html.Div(id='textarea-root', style={'whiteSpace': 'pre-line'}),
+        html.H3("La requête SQL", style={'text-align': 'center'}, className="card-title"),
+        html.Div(id='textarea-requete', style={'whiteSpace': 'pre-line','text-align': 'left'}),
     ],
-    color="warning",
+    color="primary",
     inverse=False,
     outline=True,
 )
@@ -131,13 +110,14 @@ card_graph = dbc.Card(
             elements=listeCytoHTML,
             layout={'name': 'breadthfirst'},
             style={'width': '100%', 'height': '400px'}
-        )
+        ),
+        html.Div(id='affiche-colonnes-table'),
     ]
 )
 
 app.layout = html.Div([
     dbc.Row([dbc.Col(card_main, width=2),
-             dbc.Col(card_question, width=2),
+             dbc.Col(card_question, width=3),
              dbc.Col(card_graph, width=7)], justify="around"),  # justify="start", "center", "end", "between", "around"
 ])
 
@@ -155,87 +135,117 @@ def updateDropdownLayout(nouveauLayout,ancienLayout):
     else :
         return ancienLayout,ancienLayout
 
+table_selectionnee = ''
 @app.callback(Output('affiche-colonnes-table', 'children'),
-              [Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData')],
+              [Input(component_id="cytoscape-update-layout",component_property= 'tapNodeData')],
               prevent_initial_call=True
               )
 def updateTable(table):
+    global table_selectionnee
     if table :
-        df = getAttributTable(table[0]['id'])
-        table = html.Div([
-            html.H5(table[0]['id']),
-            dash_table.DataTable(
-                data=df.to_dict('rows'),
-                columns=[{'name': i, 'id': i} for i in df.columns]
-            )
-        ])
+        table_selectionnee = table['id']
 
-        return  table
-    else :
-        return  html.Div([html.H5("")])
+    df = getAttributTable(table_selectionnee)
+    tableAffichage = html.Div([
+        html.H5(table_selectionnee),
+        dash_table.DataTable(
+            data=df.to_dict('rows'),
+            columns=[{'name': i, 'id': i} for i in df.columns]
+        )
+    ])
 
-@app.callback(
-    Output('textarea-root', 'children'),
-    Input(component_id="cytoscape-update-layout", component_property='selectedEdgeData'),
-    State(component_id='cytoscape-update-layout', component_property='elements')
-)
-def update_output(relation,graph):
-    if relation :
-        return getRoot(graph)
-    else:
-        return ''
+    return  tableAffichage
+
+reqSQL = ''
+@app.callback(Output('textarea-requete', 'children'),
+              [Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
+              prevent_initial_call=True
+              )
+def update_requette(relation):
+    return reqSQL
+
 
 @app.callback([Output(component_id='cytoscape-update-layout',component_property= 'elements')],
-              [Input(component_id="cytoscape-global",component_property= 'selectedNodeData'),
-               Input(component_id="cytoscape-update-layout",component_property= 'selectedNodeData'),
+              [Input(component_id="cytoscape-global",component_property= 'tapNodeData'),
+               Input(component_id="cytoscape-update-layout",component_property= 'tapNodeData'),
                Input(component_id="cytoscape-update-layout",component_property= 'selectedEdgeData')],
                [State(component_id='cytoscape-update-layout',component_property= 'elements')],
                prevent_initial_call=True
 )
 def update_layout1(table1, table2, relations, graph):
-    if table1 :
+    global reqSQL
+    reqSQL = ''
+
+    if table2 is None:
         table = table1
-    else:
+        if table:
+            if (len(table) > 0) & (len(graph) == 0):
+                noeud = table['id']
+                print(len(table), len(graph),noeud)
+                return [initAffichage(dfListeRelation, noeud)]
+    else :
         table = table2
+        noeud = table['id']
+        return [initAffichage(dfListeRelation, noeud)]
 
-    if table2 : table = table2
-
-    if table is None:
+    if relations is None:
         return [graph]
     else:
+        if len(relations) > 0:
+            valeurtab = []
+            premiereTable = getRoot(graph)#relations[0]['source']
+            reqSQL = '-'*70+'\nselect count(*) \nfrom '+ premiereTable
+            for ligne in relations:
+                if ligne['source'] not in valeurtab:
+                    valeurtab.append(ligne['source'])
 
-        if len(table) > 0:
-            noeud = table[0]['id']
-            return [initAffichage(dfListeRelation, noeud)]
-        else:
-            if relations:
-                if len(relations) > 0:
-                    valeurtab = []
-                    premiereTable = getRoot(graph)#relations[0]['source']
-                    reqSQL = '-'*150+'\nselect count(*) \nfrom '+ premiereTable
-                    for ligne in relations:
-                        if ligne['source'] not in valeurtab:
-                            valeurtab.append(ligne['source'])
+                    if premiereTable == ligne['source']:
+                        table_suivante1,table_suivante2 = ligne['target'],ligne['source']
 
-                            if premiereTable == ligne['source']:
-                                table_suivante1,table_suivante2 = ligne['target'],ligne['source']
+                    else:
+                        table_suivante1,table_suivante2 = ligne['source'],ligne['target']
 
-                            else:
-                                table_suivante1,table_suivante2 = ligne['source'],ligne['target']
+                    reqSQL += "\n     join {0} \n       on {0}.{2} = {1}.{3} ".format(
+                        table_suivante1,table_suivante2,
+                    ligne['relation']['colTableMère'],
+                        ligne['relation']['colTableFille'])
+            reqSQL += '\n'
+            with open('liste_requetes.txt', mode='a', encoding='utf-8') as mon_fichier :
+                mon_fichier.write(reqSQL)
 
-                            reqSQL += "\n     join {0} \n       on {0}.{2} = {1}.{3} ".format(
-                                table_suivante1,table_suivante2,
-                            ligne['relation']['colTableMère'],
-                                ligne['relation']['colTableFille'])
-                    reqSQL += '\n'
-                    with open('infos.txt', mode='a', encoding='utf-8') as mon_fichier :
-                        mon_fichier.write(reqSQL)
-                    print(reqSQL)
+    return [graph]
 
-            return [graph]
-
-
-
+    # if table is None:
+    #     return [graph]
+    # else:
+    #     if len(table) > 0:
+    #         noeud = table['id']
+    #         return [initAffichage(dfListeRelation, noeud)]
+    #     else:
+    #         if relations:
+    #             if len(relations) > 0:
+    #                 valeurtab = []
+    #                 premiereTable = getRoot(graph)#relations[0]['source']
+    #                 reqSQL = '-'*70+'\nselect count(*) \nfrom '+ premiereTable
+    #                 for ligne in relations:
+    #                     if ligne['source'] not in valeurtab:
+    #                         valeurtab.append(ligne['source'])
+    #
+    #                         if premiereTable == ligne['source']:
+    #                             table_suivante1,table_suivante2 = ligne['target'],ligne['source']
+    #
+    #                         else:
+    #                             table_suivante1,table_suivante2 = ligne['source'],ligne['target']
+    #
+    #                         reqSQL += "\n     join {0} \n       on {0}.{2} = {1}.{3} ".format(
+    #                             table_suivante1,table_suivante2,
+    #                         ligne['relation']['colTableMère'],
+    #                             ligne['relation']['colTableFille'])
+    #                 reqSQL += '\n'
+    #                 with open('liste_requetes.txt', mode='a', encoding='utf-8') as mon_fichier :
+    #                     mon_fichier.write(reqSQL)
+    #
+    #         return [graph]
 
 if __name__ == '__main__':
     app.run_server(debug=True)
